@@ -1,0 +1,97 @@
+Phylogeny	H37Rv gene	Name	Amino acids	Subfamily	PGRS	bicistronic partner	Comments
+1.0	Rv3872	PE35	99.0	I		PPE68	
+2.0	Rv3746c	PE34	111.0	I			"No PE sequence, YxxxD at reasonable position. Phyre --> A helix-turn-helix structure seems present, although the 2nd helix goes on longer then expected (beyond the YxxxD). Inconclusive whteher it is ""a true PE"""
+3.0	Rv0285	PE5	102.0	II		PPE4	
+4.0	Rv1386	PE15	102.0	II		PPE20	
+5.0	Rv3893c	PE36	77.0	III		PPE69	Truncated due to a stop codon. Analyzing 3' genome sequence reveals YxxxE and stop codon at expected location
+6.0	Rv2431c	PE25	99.0	III		PPE41	
+7.0	Rv2107	PE22	98.0	IV		PPE36	
+8.0	Rv1169c	LipX	100.0	IV		PPE17	PD instead of PE. YxxxD/E present. Phyre2 -->  Helixturn-helix --> A clear PE
+9.0	Rv1806	PE20	99.0	IV		PPE31	
+10.0	Rv1788	PE18	99.0	IV		PPE26	
+11.0	Rv1791	PE19	99.0	IV			
+12.0	Rv3622c	PE32	99.0	IV		PPE65	
+13.0	Rv1195	PE13	99.0	IV		PPE18	
+14.0	Rv3477	PE31	98.0	IV		PPE60	
+15.0	Rv0916c	PE7	99.0	IV		PPE14	
+16.0	Rv1040c	PE8	275.0	IV		PPE15	Specific C-terminal domain?
+17.0	Rv2769c	PE27	275.0	IV		PPE43	Specific C-terminal domain?
+18.0	Rv0152c	PE2	525.0	V			PFAM08237. Cutinase like. No PE sequence. Also no YxxxD/E found. No helix-turn-helix motif --> No PE
+19.0	Rv2408c	PE24	239.0	V			
+20.0	Rv1068c	PE_PGRS20	463.0	V	PGRS		
+21.0	Rv1983	PE_PGRS35	558.0	V	PGRS		
+22.0	Rv2519	PE26	492.0	V	PGRS		PGRS. Has a C-terminal domain, which may be a hydrolase. 
+23.0	Rv0977	PE_PGRS16	923.0	V	PGRS		
+24.0	Rv0160c	PE4	502.0	V			PD instead of PE. PE-like Helix-turn-helix structure, with a predicted Cutinase/Hydrolase domain afer the PE-domain (PF08237) 
+25.0	Rv0159c	PE3	468.0	V			PE, with a hydrolase middle domain (PF08237). Homology with MSMEG_6394
+26.0	Rv0754	PE_PGRS11	584.0	V	PGRS		
+27.0	Rv2634c	PE_PGRS46	778.0	V	PGRS		
+28.0	Rv3590c	PE_PGRS58	584.0	V	PGRS		
+29.0	Rv1172c	PE12	308.0	V			
+30.0	Rv2340c	PE_PGRS39	413.0	V	PGRS		
+31.0	Rv2098	PE_PGRS36		V	PGRS		MGMmodified - Part of Rv2099c+98, PE21/PE_PGRS36 pairing
+31.0	Rv2099c	PE21		V	PGRS		MGMmodified - Part of Rv2099c+98, PE21/PE_PGRS36 pairing
+32.0	Rv0578c	PE_PGRS7	1306.0	V	PGRS		
+33.0	Rv3595c	PE_PGRS59	439.0	V	PGRS		
+34.0	Rv1468c	PE_PGRS29	370.0	V	PGRS		
+35.0	Rv3511	PE_PGRS55		V	PGRS		MGMmodified - Part of Rv3511+12, PE_PGRS55/56 pairing
+35.0	Rv3512	PE_PGRS56		V	PGRS		MGMmodified - Part of Rv3511+12, PE_PGRS55/56 pairing
+36.0	Rv3514	PE_PGRS57	1489.0	V	PGRS		
+37.0	Rv3508	PE_PGRS54	1901.0	V	PGRS		
+38.0	Rv2371	PE_PGRS40	61.0	V			Likely pseudogene. No YxxxD/E detected in any of the reading frames when analyzin 3' genomic secuence. 
+39.0	Rv1452c	PE_PGRS28	741.0	V	PGRS		
+40.0	Rv1450c	PE_PGRS27	1329.0	V	PGRS		
+41.0	Rv0980c	PE_PGRS18	457.0	V	PGRS		
+42.0	Rv0978c	PE_PGRS17	331.0	V	PGRS		
+43.0	Rv2615c	PE_PGRS45	461.0	V	PGRS		
+44.0	Rv1214c	PE14	110.0	V			No PE, clear YxxxE. Phyre2 --> helix-turn-helix structure. Likely wrongly annotated start codon. PD in a logical poosition if one of the previous valines is used (-7 or -8)
+45.0	Rv1243c	PE_PGRS23	562.0	V	PGRS		
+46.0	Rv3367	PE_PGRS51	588.0	V	PGRS		
+47.0	Rv1441c	PE_PGRS26	491.0	V	PGRS		
+48.0	Rv0872c	PE_PGRS15	606.0	V	PGRS		
+49.0	Rv2591	PE_PGRS44	543.0	V	PGRS		
+50.0	Rv0742	PE_PGRS8	175.0	V	PGRS		
+51.0	Rv1840c	PE_PGRS34	515.0	V	PGRS		
+52.0	Rv1818c	PE_PGRS33	498.0	V	PGRS		
+53.0	Rv3388	PE_PGRS52	731.0	V	PGRS		
+54.0	Rv2162c	PE_PGRS38	532.0	V	PGRS		
+55.0	Rv2741	PE_PGRS47	525.0	V	PGRS		
+56.0	Rv1067c	PE_PGRS19	667.0	V	PGRS		
+57.0	Rv0532	PE_PGRS6	594.0	V	PGRS		
+58.0	Rv0124	PE_PGRS2	487.0	V	PGRS		
+59.0	Rv1396c	PE_PGRS25	576.0	V	PGRS		
+60.0	Rv1803c	PE_PGRS32	639.0	V	PGRS		
+61.0	Rv0109	PE_PGRS1	496.0	V	PGRS		
+62.0	Rv1430	PE16	528.0	V			PFAM08237  Sultana et al. 2013 Esterase 
+63.0	Rv2328	PE23	382.0	V			No PGRS. C-terminus: structural homology with a Rye grass ice-binding protein :  3ULT
+64.0	Rv1651c	PE_PGRS30	1011.0	V	PGRS		
+65.0	Rv1646	PE17	310.0	V			PD instead of PE, but has YxxxE
+66.0	Rv3812	PE_PGRS62	504.0	V	PGRS		
+67.0	Rv0151c	PE1	588.0	V			PFAM08237 Is this a PE? Wrong startsite? PS at 45 could be close to PE (according to blast PE makes sense), but no appropriate YxxxE present within the 100 aminacids after that, structure needs to be verified. Structure of that domain very strongly indicates PE fold (100% PE8), but no YxxxE
+68.0	Rv1768	PE_PGRS31	618.0	V	PGRS		
+69.0	Rv3345+4c	PE_PGRS50-49		V	PGRS		
+69.0	Rv3345+4c	PE_PGRS50-49		V	PGRS		
+70.0	Rv2396	PE_PGRS41	361.0	V	PGRS		
+71.0	Rv1088	PE9		V			MGMmodified - Part of Rv1088+89, PE9+PE10 pairing. Neither of these seems to be a PE. --> Phyre suggests PE fold
+71.0	Rv1089	PE10		V			MGMmodified - Part of Rv1088+89, PE9+PE10 pairing. Neither of these seems to be a PE. --> Phyre suggests PE fold
+72.0	Rv1325c	PE_PGRS24	603.0	V	PGRS		
+73.0	Rv1091	PE_PGRS22	853.0	V	PGRS		
+74.0	Rv1087	PE_PGRS21	767.0	V	PGRS		
+75.0	Rv0747	PE_PGRS10	801.0	V	PGRS		
+76.0	Rv3652	PE_PGRS60		V	PGRS		MGMmodified - Part of Rv3652+3, PE_PGRS60+1 pairing
+76.0	Rv3653	PE_PGRS61		V	PGRS		MGMmodified - Part of Rv3652+3, PE_PGRS60+1 pairing
+77.0	Rv1759c	Wag22	914.0	V	PGRS		
+78.0	Rv0278c	PE_PGRS3	957.0	V	PGRS		
+79.0	Rv0279c	PE_PGRS4	837.0	V	PGRS		
+80.0	Rv0834c	PE_PGRS14	882.0	V	PGRS		
+81.0	Rv0746	PE_PGRS9	783.0	V	PGRS		
+82.0	Rv3650	PE33	94.0	V			
+83.0	Rv0297	PE_PGRS5	591.0	V	PGRS		
+84.0	Rv3507	PE_PGRS53	1381.0	V	PGRS		
+85.0	Rv3097c	LipY	437.0	V			
+86.0	Rv0832	PE_PGRS12		V	PGRS		MGMmodified - Part of Rv0832+3, PE_PGRS12+13 pairing
+86.0	Rv0833	PE_PGRS13		V	PGRS		MGMmodified - Part of Rv0832+3, PE_PGRS12+13 pairing
+87.0	Rv0335c	PE6	171.0	V			
+88.0	Rv2853	PE_PGRS48	615.0	V	PGRS		
+89.0	Rv2487c	PE_PGRS42	694.0	V	PGRS		
+90.0	Rv2490c	PE_PGRS43	1660.0	V	PGRS		

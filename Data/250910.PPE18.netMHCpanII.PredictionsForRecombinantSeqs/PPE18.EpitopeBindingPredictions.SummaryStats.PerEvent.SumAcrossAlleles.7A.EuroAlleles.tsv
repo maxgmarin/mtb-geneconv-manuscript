@@ -1,0 +1,8 @@
+event_id	gains_Not_to_SB	losses_SB_to_Not	positions_different	net_gains_minus_losses	direction
+Event_091	0	0	0	0	no change
+Event_092	0	0	0	0	no change
+Event_093	0	0	0	0	no change
+Event_094	10	4	14	6	mixed
+Event_095	3	0	3	3	only gains
+Event_096	2	0	2	2	only gains
+Event_097	1	0	1	1	only gains

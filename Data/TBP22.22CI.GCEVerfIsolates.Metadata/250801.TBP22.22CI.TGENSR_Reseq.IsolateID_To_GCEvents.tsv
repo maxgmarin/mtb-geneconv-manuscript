@@ -1,0 +1,23 @@
+SampleID	EventIDs	Roles	All_Descriptions
+TB3898	Event_001	Control	Control for Event_001
+TB6733	Event_001	Verification	Verification for Event_001
+TB6599	Event_003	Verification	Verification for Event_003
+TB6977	Event_003;Event_019	Control;Verification	Control for Event_003;Verification for Event_019
+TB3706	Event_006	Control	Control for Event_006
+TB3305	Event_006	Verification	Verification for Event_006
+TB7044	Event_007	Control	Control for Event_007
+TB6755	Event_007	Verification	Verification for Event_007
+TB6765	Event_010	Control	Control for Event_010
+TB6552	Event_010	Verification	Verification for Event_010
+TB6973	Event_011	Control	Control for Event_011
+TB6778	Event_011	Verification	Verification for Event_011
+TB3256	Event_013	Control	Control for Event_013
+TB6786	Event_013	Verification	Verification for Event_013
+TB6976	Event_019;Event_021	Control	Control for Event_019;Control for Event_021
+TB3572	Event_021	Verification	Verification for Event_021
+TB8073	Event_022	Control	Control for Event_022
+TB6596	Event_022	Verification	Verification for Event_022
+TB6807	Event_024	Control	Control for Event_024
+TB7340	Event_024	Verification	Verification for Event_024
+TB4414	Event_025	Control	Control for Event_025
+TB6846	Event_025	Verification	Verification for Event_025
