@@ -1,3 +1,11 @@
+
+# Ignore directories w/ large intermediate files, etc
+Analysis/4_Mtb_RecombEvent_Explore_V6/PerPRViz_GCE_WiPhylo_WiParalogVar
+Analysis/4_Mtb_RecombEvent_Explore_V6/GCE_PerEvent_Viz_Files/GCE_PerEvent_Viz_Files/
+Analysis/4_Mtb_RecombEvent_Explore_V6/GCE_PerEvent_Viz_Files/GCE_PerEvent_Viz_Files_Try2_SmallerSize
+Analysis/1_Reference_Preprocessing/H37Rv_NonUnqSeq_Viz/
+Analysis/3_Mtb_NucDivAnalysis_V5/NucDiv_HSR_Peak_Viz/NucDivPeak_*.pdf
+
 # macOS
 .DS_Store
 
