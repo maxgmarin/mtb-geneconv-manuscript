@@ -18,6 +18,28 @@ See [`docs/pipeline_stages.md`](docs/pipeline_stages.md) for a detailed breakdow
 | `--configfile` | `Mtb-WGA.config.json` — paths to reference files (H37Rv FASTA, GFF, GenBank) and other tool settings |
 | `inputSampleData_TSV` | Sample sheet TSV with one row per isolate: `SampleID` and path to the complete assembly FASTA |
 
+## Pipeline Stages
+
+1. **H37Rv homology mapping** — minimap2 self-alignment of the H37Rv reference ([NC_000962.3](https://www.ncbi.nlm.nih.gov/nuccore/448814763)) against itself (k19/w19 params) to generate a map of repetitive/low-complexity (RLC) and paralogous low-complexity (PLC) regions used as masks for downstream SNV filtering
+2. **Assembly-to-reference alignment** — each complete assembly is aligned to H37Rv using minimap2 (asm10 mode, optimized for highly similar sequences)
+3. **Per-sample variant calling** — variants called from alignments using paftools.js (from PAF) and bcftools mpileup (from BAM); indels >15 bp removed
+4. **MTBC lineage calling** — branches off per-sample variant calls; FastLinCaller assigns *Mtb* lineage per isolate
+5. **Multi-sample SNP merging & filtering** — per-sample VCFs unified to a common position set, merged into a joint callset, and filtered by ambiguity threshold (≤10% missing data)
+6. **Phylogenetic inference** — FastTree (GTR) for a rapid tree used as the Gubbins starting tree; IQ-TREE (GTR+ASC, 10,000 ultrafast bootstraps) for the final published tree
+7. **Nucleotide diversity** — windowed nucleotide diversity (π) calculated with vcftools across 1,000 bp windows
+8. **Recombination detection** — Gubbins v3.2.1 (extensive search, min-window=25, max-window=1,000, min-snps=4) run on a pseudo-full-genome MSA constructed by inserting per-sample SNVs into H37Rv, using the FastTree output as the starting tree
+
+## Outputs
+
+| Output | Description |
+|---|---|
+| Per-sample alignment & variant calls | BAM, PAF, and VCF files per isolate from assembly-to-reference alignment |
+| MTBC lineage calls | Per-sample lineage assignment TSV (FastLinCaller) |
+| Multi-sample SNP callset | Joint VCF (and derived formats: compressed VCF, FASTA alignment) of all SNVs across the dataset |
+| Phylogenetic tree | Maximum-likelihood tree (IQ-TREE, GTR+ASC) for the input isolate set |
+| Nucleotide diversity | Per-window π estimates across the H37Rv reference genome |
+| Recombination predictions | Gubbins output including a recombination predictions GFF/BED, per-branch statistics CSV, and a node-labelled phylogeny; these predictions are the basis for identifying putative gene conversion events, as Gubbins flags genomic intervals where a lineage has accumulated SNVs at a rate far exceeding the background substitution rate of the population |
+
 ## Pipeline Overview
 
 ```
@@ -44,12 +66,14 @@ See [`docs/pipeline_stages.md`](docs/pipeline_stages.md) for a detailed breakdow
                     ▼                   ▼                   ▼
           Phylogenetic            Nucleotide          Recombination
           Inference               Diversity           Detection
-          (FastTree, IQ-TREE)     (vcftools)          (Gubbins)
+          (FastTree → IQ-TREE)    (vcftools)          (Gubbins)
+                    │                                       ▲
+                    └───────── FastTree starting tree ──────┘
 ```
 
 ```mermaid
 flowchart TD
-    A["<b>Mtb Genome Assemblies</b><br/>24 isolates, FASTA"] --> B
+    A["<b>Mtb Genome Assemblies</b><br/>FASTA, per isolate"] --> B
     REF["<b>H37Rv Reference</b><br/>NC_000962.3"] --> SELF
     REF --> B
 
@@ -59,24 +83,12 @@ flowchart TD
     B --> C["<b>Variant Calling</b><br/>paftools.js, bcftools"]
 
     C --> D["<b>Lineage Calling</b><br/>FastLinCaller"]
-    C --> E["<b>SNP Merging &amp; Filtering</b><br/>multi-sample"]
+    C --> E["<b>Multi-sample SNP Merging &amp; Filtering</b>"]
     E --> F["<b>Nucleotide Diversity</b><br/>vcftools"]
-
     E --> G["<b>Phylogenetic Inference</b><br/>FastTree, IQ-TREE"]
     E --> H["<b>Recombination Detection</b><br/>Gubbins"]
-    G --> H
+    G -->|FastTree starting tree| H
 ```
-
-## Pipeline Stages
-
-1. **H37Rv homology mapping** — minimap2 self-alignment of the H37Rv reference ([NC_000962.3](https://www.ncbi.nlm.nih.gov/nuccore/448814763)) against itself (k19/w19 params) to generate a map of repetitive/low-complexity (RLC) and paralogous low-complexity (PLC) regions; results become BED masks used for downstream SNV filtering
-2. **Assembly-to-reference alignment** — each complete assembly is aligned to H37Rv using minimap2 (asm10 mode, optimized for highly similar sequences)
-3. **Per-sample variant calling** — variants called from alignments using paftools.js (from PAF) and bcftools mpileup (from BAM); indels >15 bp removed
-4. **MTBC lineage calling** — branches off per-sample variant calls; FastLinCaller assigns *Mtb* lineage per isolate
-5. **Multi-sample SNP merging & filtering** — per-sample VCFs unified to a common position set, merged into a joint callset, and filtered by: ambiguity threshold (≤10% missing data), RLC region mask, PLC region mask, and low-mappability region mask
-6. **Phylogenetic inference** — FastTree (GTR) for rapid exploratory trees; IQ-TREE (GTR+ASC, 10,000 ultrafast bootstraps) for final trees, run under multiple filter conditions
-7. **Nucleotide diversity** — windowed nucleotide diversity (π) calculated with vcftools across 1,000 bp windows
-8. **Recombination detection** — Gubbins v3.2.1 (extensive search, min-window=25, max-window=1,000, min-snps=4) run on a pseudo-full-genome MSA constructed by inserting per-sample SNVs into H37Rv; the FastTree output is provided as the starting tree for Gubbins iteration
 
 ## Key Tools
 
