@@ -1,0 +1,30 @@
+SampleID	numContigs_Complete	circContig_Length	circContig_Cov	Flye_EstimatedCov	Flye_ReadLen_N50	Flye_ReadLen_N90	Lineage_Asm	Lineage_AsmPP	FlyeI3_dnaA_Found	FlyeI3M_dnaA_Found	FlyeI3MPP_dnaA_Found	IlluminaCov_To_ONTAsm	NumChanges_PilonPolished	NumSNPs_PilonPolished	NumTotalInsertions_PilonPolished	Num1bpInsertion_PilonPolished	Num2bpInsertion_PilonPolished	NumTotalDeletions_PilonPolished	Num1bpDeletion_PilonPolished	PrimaryLineage_Asm	Dataset_Tag	SR_SRA_RunAcc	SeqReason	PB_SeqRunName	EventID	Event_Gene(s)	Event_Relationship	TBP_SampleID
+DNA0551	1	4410903	187	190	8609	7014	lineage2.2.1	lineage2.2.1	True				0	0	0	0	0	0	0	lineage2	TBPortals_2022_Set3	SRR10380186	MtbPhyloDiversity	P7544	NAN	NAN	NAN	TB7198
+DNA621	1	4412093	127	129	4204	2724	lineage2.2.1	lineage2.2.1	True				1	0	0	0	0	1	0	lineage2	TBPortals_2022_Set3	SRR10397096	PutativeRecomb	P7529	Event_006	Rv0979c,rpmF,PE_PGRS18	Outside_Event	TB3706
+DNA594	1	4416251	161	174	4212	2712	lineage2.2.1	lineage2.2.1	True				2	0	2	0	0	0	0	lineage2	TBPortals_2022_Set3	SRR10397175	PutativeRecomb	P7529	Event_006	Rv0979c,rpmF,PE_PGRS18	Within_Event	TB3305
+DNA435	1	4416249	100	102	9925	7187	lineage2.2.1	lineage2.2.1	True				1	0	1	0	0	0	0	lineage2	TBPortals_2022_Set3	SRR10379929	MtbPhyloDiversity	P7544	NAN	NAN	NAN	TB6760
+DNA0414	1	4426359	225	226	5817	3402	lineage4.1.2.1	lineage4.1.2.1	True				2	0	2	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379962	PutativeRecomb	P7761	Event_017 | Event_023	ppsB | PPE56,Rv3351c	Outside_Event | Outside_Event	TB6595
+DNA0432	1	4417503	307	309	7792	6519	lineage4.1.2.1	lineage4.1.2.1	True				1	0	1	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379935	PutativeRecomb	P7559	Event_007	Rv1148c	Within_Event	TB6755
+DNA177	1	4424467	525	527	7948	6551	lineage4.1.2.1	lineage4.1.2.1	True				2	0	2	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380054	MtbPhyloDiversity	P7559	NAN	NAN	NAN	TB7379
+DNA199	1	4408536	151	151	8683	7029	lineage4.1.2.1	lineage4.1.2.1	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380108	PutativeRecomb	P7544	Event_010	PPE18,esxK,esxL	Within_Event	TB6552
+DNA0441	1	4386061	82	82	8459	6983	lineage4.1.2.1	lineage4.1.2.1	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379924	PutativeRecomb	P7544	Event_010	PPE18,esxK,esxL	Outside_Event	TB6765
+DNA146	1	4438452	123	124	8542	7006	lineage4.2.1	lineage4.2.1	True				1	1	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380093	PutativeRecomb	P7544	Event_002 | Event_024	Rv0393 | PPE59,Rv3430c	Outside_Event | Within_Event	TB7340
+DNA287	1	4438185	149	149	8515	6988	lineage4.2.1	lineage4.2.1	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380035	MtbPhyloDiversity	P7544	NAN	NAN	NAN	TB7396
+DNA0453	1	4426239	147	148	7909	6539	lineage4.2.1	lineage4.2.1	True				2	0	2	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380252	PutativeRecomb	P7559	Event_011	PPE18	Within_Event	TB6778
+DNA246	1	4435184	101	101	8506	6988	lineage4.2.1	lineage4.2.1	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380192	PutativeRecomb	P7544	Event_007 | Event_008	Rv1148c | PPE18	Outside_Event | Outside_Event	TB7044
+DNA237	1	4431752	101	102	7910	6549	lineage4.2.1	lineage4.2.1	True				1	1	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380223	PutativeRecomb	P7559	Event_012	PPE18	Outside_Event	TB6973
+DNA0479	1	4438385	166	167	8028	6566	lineage4.2.1	lineage4.2.1	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379998	PutativeRecomb	P7559	Event_024	PPE59,Rv3430c	Outside_Event	TB6807
+DNA0527	1	4398287	83	84	7892	6545	lineage4.3.3	lineage4.3.3	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380219	PutativeRecomb	P7559	Event_019	PPE46	Outside_Event	TB6976
+DNA361	1	4397064	103	103	7881	6851	lineage4.3.3	lineage4.3.3	True				1	0	1	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10397163	PutativeRecomb	P7544	Event_021	Rv3108	Within_Event	TB3572
+DNA0417	1	4393396	57	56	7900	6540	lineage4.3.4.1	lineage4.3.4.1	True				2	0	2	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379958	PutativeRecomb	P7559	Event_018	esxQ,PPE46	Outside_Event	TB6599
+DNA0530	1	4357767	21	21	8548	6988	lineage4.3.4.2	lineage4.3.4.2	True				2	1	1	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380218	PutativeRecomb	P7544	Event_003	vapB31,vapC31	Outside_Event	TB6977
+DNA224	1	4402848	279	279	8795	7079	lineage4.7	lineage4.7	True				1	0	1	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379904	MtbPhyloDiversity	P7544	NAN	NAN	NAN	TB6830
+DNA0511	1	4410091	116	117	8745	7059	lineage4.8	lineage4.8	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379893	PutativeRecomb	P7544	Event_025	PPE60	Within_Event	TB6846
+DNA014	1	4406178	200	200	7994	3750	lineage4.8	lineage4.8	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10430399	PutativeRecomb	P7761	Event_016	Rv2651c	Outside_Event	TB4414
+DNA216	1	4414481	182	183	8033	6575	lineage4.8	lineage4.8	True				1	0	1	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380244	PutativeRecomb	P7559	Event_013	PPE19	Within_Event	TB6786
+DNA0486	1	4397920	449	451	6927	4010	lineage4.8	lineage4.8	True				2	0	2	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379988	MtbPhyloDiversity	P7529	NAN	NAN	NAN	TB6816
+DNA0428	1	4397453	318	317	6575	3909	lineage4.8	lineage4.8	True				1	0	1	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379945	PutativeRecomb	P7529	Event_001	vapC25,vapB25	Within_Event	TB6733
+DNA125	1	4409032	219	218	8481	6989	lineage4.8	lineage4.8	True				4	1	3	1	0	0	0	lineage4	TBPortals_2022_Set3	SRR10380026	PutativeRecomb	P7544	Event_022	PPE56	Outside_Event	TB8073
+DNA0415	1	4418004	178	179	8282	6625	lineage4.8	lineage4.8	True				1	1	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10379961	PutativeRecomb	P7559	Event_022	PPE56	Within_Event	TB6596
+DNA373	1	4406681	49	50	4075	2546	lineage4.8	lineage4.8	True				3	2	0	0	0	1	1	lineage4	TBPortals_2022_Set3	SRR10397263	PutativeRecomb	P7529	Event_001	vapC25,vapB25	Outside_Event	TB3898
+DNA350	1	4416601	86	86	7466	6442	lineage4.8	lineage4.8	True				0	0	0	0	0	0	0	lineage4	TBPortals_2022_Set3	SRR10397205	PutativeRecomb	P7559	Event_013	PPE19	Outside_Event	TB3256
