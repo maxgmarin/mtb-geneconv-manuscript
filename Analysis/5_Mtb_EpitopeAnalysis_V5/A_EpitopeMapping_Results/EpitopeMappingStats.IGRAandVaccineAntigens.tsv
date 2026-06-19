@@ -1,0 +1,12 @@
+H37rv_GeneID	Symbol	Length	N_Pos	N_Neg	Total	HasHmRegion	AntigenLVL2_And_HHR_Comb
+Rv0125	pepA	1068	3	69	72	False	Antigen-Unq
+Rv0288	esxH	291	23	3	26	False	Antigen-Unq
+Rv1196	PPE18	1176	27	56	83	True	Antigen-HHR
+Rv1886c	fbpB	978	16	56	72	False	Antigen-Unq
+Rv2608	PPE42	1743	16	106	122	False	Antigen-Unq
+Rv2660c	Rv2660c	228	2	12	14	False	Antigen-Unq
+Rv3619c	esxV	285	10	9	19	True	Antigen-HHR
+Rv3620c	esxW	297	12	7	19	True	Antigen-HHR
+Rv3804c	fbpA	1017	13	65	78	False	Antigen-Unq
+Rv3874	esxB	303	21	2	23	False	Antigen-Unq
+Rv3875	esxA	288	19	3	22	False	Antigen-Unq
