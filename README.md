@@ -12,8 +12,6 @@ Supporting code, data, and metadata for the manuscript "Gene conversion is a key
 
 ## Overview
 
-Gene conversion — the non-reciprocal transfer of sequence information between homologous loci — has long been suspected to contribute to diversity in *Mycobacterium tuberculosis* (Mtb), yet its genome-wide extent and functional consequences have remained unclear. This study uses 151 complete hybrid Mtb genome assemblies to systematically characterize gene conversion events across the Mtb genome, revealing that gene conversion is a major driver of diversity hotspots in antigenic and virulence-associated loci including PPE18 and other PE/PPE family genes.
-
 This repository contains all code, bioinformatics workflows, and analysis notebooks used to generate the results in the manuscript. 
 
 ---
@@ -31,6 +29,8 @@ This repository contains all code, bioinformatics workflows, and analysis notebo
 ---
 
 ## Repository Structure
+
+The repository is organized into the following key directories.
 
 | Directory | Description |
 |---|---|

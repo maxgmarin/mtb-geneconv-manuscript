@@ -12,5 +12,5 @@ This directory contains H37Rv reference genome annotations, masking files, and o
 | `H37Rv_GenomeWindows/` | H37Rv genome segmented into 1,000 bp non-overlapping windows (BED and annotated TSV formats) |
 | `H37Rv_Longdust_LowComplexityRegions/` | Low-complexity region (LCR) calls from [longdust](https://github.com/lh3/longdust) under default and relaxed stringency settings (BED format) |
 | `H37Rv_MappabilityAnalysis_K50E4/` | Short-read mappability map for H37Rv (k=50, e=4): per-position pileup map, bigWig track, and a BED of regions with mappability < 1 |
-| `Mtb_H37Rv_MaskingSchemes/` | Combined masking BEDs merging paralogous/low-complexity regions (from homology mapping) with Coscolla 2015 gene exclusions |
+| `Mtb_H37Rv_MaskingSchemes/` | Masking schemes of regions often removed from short-read based variant analysis of the H37Rv genome.  |
 | `WHO_MtbAMR_Catalog/` | WHO *M. tuberculosis* antimicrobial resistance variant catalog (cleaned CSV format) used for variant annotation |

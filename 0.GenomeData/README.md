@@ -34,7 +34,7 @@ SD1 includes the following sheets:
 | TBP-22-LR Dataset (n=22) | Long-read and short-read accessions for resequencing validation isolates |
 | Mtb151CI - SetA – PB RSII Subreads | Raw PacBio RSII read accessions for the Mtb151CI subset from Marin et al. (2022) (BioProject PRJNA719670) |
 | Mtb151CI - SetB – PB Sequel2 Subreads | Raw PacBio Sequel II subread accessions for the Mtb151CI subset from TB Portals (PRJNA421446) |
-| Mtb151CI - SetC – PB Sequel2 CCS (HiFi) | Raw PacBio HiFi CCS read accessions for the Mtb151CI subset from the TRUST cohort — Marin et al. (2025) |
+| Mtb151CI - SetC – PB Sequel2 CCS (HiFi) | PacBio HiFi CCS read accessions for the Mtb151CI subset from the TRUST cohort — Marin et al. (2025) |
 | Mtb151CI - SetD – ONT (Hall 2022) | Raw Oxford Nanopore read accessions for the Mtb151CI subset from Hall et al. (2022) |
 | Mtb151CI - SetE – ONT (Peker 2022) | Raw Oxford Nanopore read accessions for the Mtb151CI subset from Peker et al. (2022) |
 
@@ -54,5 +54,5 @@ Complete genome assemblies for both datasets (Mtb151CI and TBP-22-LR) are deposi
 | `Marin2026.Mtb.CompleteHybridAsms.TBP22CI.WiH37Rv.agc` | TBP-22-LR | AGC archive |
 | `Marin2026.Mtb.CompleteHybridAsms.TBP22CI.tar.gz` | TBP-22-LR | FASTA (tar.gz) |
 
-> **Zenodo record:** [https://doi.org/10.64898/2026.02.26.708061](https://doi.org/10.64898/2026.02.26.708061) *(update with Zenodo DOI)*
+> **Zenodo record:** [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18946124.svg)](https://doi.org/10.5281/zenodo.18946124)
 

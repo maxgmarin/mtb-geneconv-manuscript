@@ -21,4 +21,4 @@ gcutils = "gcutils.__init__:main"
 
 
 [project.urls]
-"Homepage" = "https://github.com/maxgmarin/mtb-GE-analysis"
+"Homepage" = "https://github.com/maxgmarin/mtb-geneconv-manuscript"
