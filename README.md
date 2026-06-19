@@ -6,7 +6,7 @@ Supporting code, data, and metadata for the manuscript "Gene conversion is a key
 
 [![DOI:10.64898/2026.02.26.708061](https://img.shields.io/badge/bioRxiv-10.64898%2F2026.02.26.708061-b31b1b)](https://doi.org/10.64898/2026.02.26.708061)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18946124.svg)](https://doi.org/10.5281/zenodo.18946124)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 
 ---
 
