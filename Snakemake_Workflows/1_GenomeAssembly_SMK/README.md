@@ -2,7 +2,9 @@
 
 ## Overview
 
-These pipelines were used to generate complete *Mtb* genome assemblies for two datasets used in this study. The **Mtb151CI** dataset (151 complete genomes) is the primary assembly dataset, matching exactly the assemblies from [Marin et al. (2025)](https://academic.oup.com/bioinformatics/article/41/5/btaf219/8127202) — *Pitfalls of bacterial pan-genome analysis approaches: a case study of Mycobacterium tuberculosis and two less clonal bacterial species* ([github.com/farhat-lab/mtb-pg-benchmarking-2024paper](https://github.com/farhat-lab/mtb-pg-benchmarking-2024paper)). The **TBP-22-LR** dataset (22 genomes) was generated specifically for this study: PacBio HiFi long-read sequencing was performed on selected isolates to validate candidate gene conversion events initially identified from short-read WGS data alone.
+These pipelines were used to generate complete *Mtb* genome assemblies for two datasets used in this study. 
+- The **Mtb151CI** dataset (151 complete genomes) is the primary assembly dataset, matching exactly the assemblies from [Marin et al. (2025)](https://academic.oup.com/bioinformatics/article/41/5/btaf219/8127202) (*Pitfalls of bacterial pan-genome analysis approaches: a case study of Mycobacterium tuberculosis and two less clonal bacterial species*, [github.com/farhat-lab/mtb-pg-benchmarking-2024paper](https://github.com/farhat-lab/mtb-pg-benchmarking-2024paper)). This dataset is the primary dataset used throughout this project.
+- The **TBP-22-LR** dataset (22 genomes) was generated specifically for this study. This specific dataset is made up of PacBio HiFi long-read sequencing from selected **Mtb** isolates. The purpose of this TBP-22_LR dataset was to validate candidate gene conversion events initially identified from short-read WGS data alone.
 
 All genomes were assembled using a hybrid approach combining long-read and short-read WGS data for each isolate. The general strategy was: (1) *de novo* assembly and long-read polishing with [Flye](https://github.com/fenderglass/Flye) (v2.6 or v2.9), followed by (2) short-read polishing with [Pilon](https://github.com/broadinstitute/pilon) (v1.23) using Illumina reads aligned to the draft assembly. For Oxford Nanopore assemblies, the higher base-call error rate of ONT v9.4.1 chemistry required additional polishing steps: a long-read polishing pass with [Medaka](https://github.com/nanoporetech/medaka) was performed before Pilon, and [PolyPolish](https://github.com/rrwick/Polypolish) was applied as a further short-read polishing step. All final assemblies were annotated with [Bakta](https://github.com/oschwengers/bakta) (v4.8).
 
@@ -16,7 +18,7 @@ Three separate pipelines were used to accommodate differences in long-read platf
 
 *Summary of the hybrid assembly pipelines used in this study*
 
-All pipelines were orchestrated using the [Snakemake](https://snakemake.readthedocs.io/) workflow system and run on the HMS O2 cluster (Slurm job scheduler). Each Snakemake file contains the exact commands and parameters used for each step.
+All pipelines were run using the [Snakemake](https://snakemake.readthedocs.io/) workflow system on the HMS O2 cluster (Using a Slurm job scheduler). Each Snakemake file contains the exact commands and parameters used for each step.
 
 ## Pipelines
 
@@ -26,7 +28,7 @@ All pipelines were orchestrated using the [Snakemake](https://snakemake.readthed
 
 ## Inputs
 
-Each pipeline takes three key inputs:
+Each Snakemake pipeline takes three key inputs:
 
 | Input | Description |
 |---|---|
@@ -108,7 +110,7 @@ Key flags:
 - `--latency-wait 35` — wait up to 35 seconds for output files to appear on the shared filesystem after a job completes
 - `-k` — keep going with independent rules if one job fails
 
-## References
+## Reference Files
 
 The `references/` subdirectory contains reference files used by the assembly pipelines:
 - Trimmomatic adapter lists for Illumina WGS trimming
