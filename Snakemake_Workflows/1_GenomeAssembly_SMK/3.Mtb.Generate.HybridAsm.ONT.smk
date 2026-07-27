@@ -1,4 +1,4 @@
-# 3.Mtb.Generate.HybridAsm.ONT9.4.1.smk
+# 3.Mtb.Generate.HybridAsm.ONT.smk
 ### Snakemake - Run pipeline for ONT (v9.4.1) long read de novo assembly (+ short-read polishing of base-level errors)
 ### Maximillian Marin (mgmarin@g.harvard.edu)
 

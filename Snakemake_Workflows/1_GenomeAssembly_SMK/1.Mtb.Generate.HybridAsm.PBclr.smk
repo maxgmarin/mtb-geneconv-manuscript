@@ -1,4 +1,4 @@
-# 1.Mtb.Generate.HybridAsm.PacBioRSII.smk
+# 1.Mtb.Generate.HybridAsm.PBclr.smk
 ### Snakemake - Run pipeline for PacBio subread (RSII) long read de novo assembly (+ short-read polishing of base-level errors)
 
 

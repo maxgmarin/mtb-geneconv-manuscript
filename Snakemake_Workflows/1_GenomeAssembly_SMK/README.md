@@ -8,19 +8,21 @@ All genomes were assembled using a hybrid approach combining long-read and short
 
 Three separate pipelines were used to accommodate differences in long-read platform and chemistry:
 
-| Pipeline | Long-read data | Key tools |
-|---|---|---|
-| `1.Mtb.Generate.HybridAsm.PacBioRSII.smk` | PacBio Subreads (RS II & Sequel II) | Flye v2.6, Pilon v1.23 |
-| `2.Mtb.Generate.HybridAsm.PacBioHiFi.smk` | PacBio CCS/HiFi (Sequel II) | Flye v2.9, Pilon v1.23 |
-| `3.Mtb.Generate.HybridAsm.ONT9.4.1.smk` | Oxford Nanopore v9.4.1 | Flye v2.6, Medaka v1.5.0, Pilon v1.23, PolyPolish v0.5.0 |
+| Long Read Platform & Type | Assembly Pipeline Label | Pipeline Snakemake File | Key Tools |
+|---|---|---|---|
+| PacBio - CLR Subreads | PBclr_LR_Flye_I3_SR_Pilon | `1.Mtb.Generate.HybridAsm.PBclr.smk` | Flye v2.6, Pilon v1.23 |
+| PacBio - CCS Reads | PBccs_LR_Flye_I3_SR_Pilon | `2.Mtb.Generate.HybridAsm.PBccs.smk` | Flye v2.9, Pilon v1.23 |
+| Oxford Nanopore - R9.4.1 Reads | ONT_LR_FlyeI3M_SR_Pilon_PolyPolish | `3.Mtb.Generate.HybridAsm.ONT.smk` | Flye v2.6, Medaka v1.5.0, Pilon v1.23, PolyPolish v0.5.0 |
+
+*Summary of the hybrid assembly pipelines used in this study*
 
 All pipelines were orchestrated using the [Snakemake](https://snakemake.readthedocs.io/) workflow system and run on the HMS O2 cluster (Slurm job scheduler). Each Snakemake file contains the exact commands and parameters used for each step.
 
 ## Pipelines
 
-1. `1.Mtb.Generate.HybridAsm.PacBioRSII.smk` — Hybrid assembly of *Mtb* isolates sequenced with PacBio (Subreads, RS II & Sequel II) and Illumina WGS
-2. `2.Mtb.Generate.HybridAsm.PacBioHiFi.smk` — Hybrid assembly of *Mtb* isolates sequenced with PacBio (CCS/HiFi, Sequel II) and Illumina WGS
-3. `3.Mtb.Generate.HybridAsm.ONT9.4.1.smk` — Hybrid assembly of *Mtb* isolates sequenced with Oxford Nanopore (chemistry 9.4.1) and Illumina WGS
+1. `1.Mtb.Generate.HybridAsm.PBclr.smk` — Hybrid assembly of *Mtb* isolates sequenced with PacBio (Subreads, RS II & Sequel II) and Illumina WGS
+2. `2.Mtb.Generate.HybridAsm.PBccs.smk` — Hybrid assembly of *Mtb* isolates sequenced with PacBio (CCS/HiFi, Sequel II) and Illumina WGS
+3. `3.Mtb.Generate.HybridAsm.ONT.smk` — Hybrid assembly of *Mtb* isolates sequenced with Oxford Nanopore (chemistry 9.4.1) and Illumina WGS
 
 ## Inputs
 
@@ -60,7 +62,7 @@ inputSampleData_TSV="/path/to/sample_sheet.tsv"
 mkdir -p ${targetOutput_Dir}
 
 # Run pipeline (example using PacBio HiFi)
-snakemake -s 2.Mtb.Generate.HybridAsm.PacBioHiFi.smk \
+snakemake -s 2.Mtb.Generate.HybridAsm.PBccs.smk \
     --config output_dir=${targetOutput_Dir} \
              inputSampleData_TSV=${inputSampleData_TSV} \
     --configfile ${inputConfigFile} \
@@ -88,7 +90,7 @@ inputSampleData_TSV="/path/to/sample_sheet.tsv"
 
 mkdir -p ${targetOutput_Dir}/O2logs/cluster/
 
-snakemake -s 2.Mtb.Generate.HybridAsm.PacBioHiFi.smk \
+snakemake -s 2.Mtb.Generate.HybridAsm.PBccs.smk \
     --config output_dir=${targetOutput_Dir} \
              inputSampleData_TSV=${inputSampleData_TSV} \
     --configfile ${inputConfigFile} \

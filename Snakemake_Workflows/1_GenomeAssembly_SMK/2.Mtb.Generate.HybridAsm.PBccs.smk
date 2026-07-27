@@ -1,4 +1,4 @@
-# 2.Mtb.Generate.HybridAsm.PacBioHiFi.smk
+# 2.Mtb.Generate.HybridAsm.PBccs.smk
 ### Snakemake - Run pipeline for PacBio HiFi (Sequel II) de novo assembly (+ short-read polishing of base-level errors)
 ### Maximillian Marin (mgmarin@g.harvard.edu)
 
