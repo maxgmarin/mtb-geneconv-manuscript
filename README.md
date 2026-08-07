@@ -12,8 +12,17 @@ Supporting code, data, and metadata for the manuscript "Gene conversion is a key
 
 ## Overview
 
-This repository contains all code, bioinformatics workflows, and analysis notebooks used to generate the results in the manuscript. 
+This repository contains all code, bioinformatics workflows, and analysis notebooks used to generate the results in the manuscript.
 
+A separate site, hosted via GitHub Pages, contains interactive visualizations and results explorers for the key figures and supporting data of this project:
+
+**[https://maxgmarin.github.io/mtb-geneconv-dataviz/](https://maxgmarin.github.io/mtb-geneconv-dataviz/)**
+
+If you enjoy data viz, give it a look!
+
+This includes:
+- **Interactive genome-wide visualization** of the data shown in Figure 3B, allowing exploration of the results directly in the browser.
+- **IGV.js-based alignment viewers**, enabling inspection of read and assembly alignments for every genome.
 ---
 
 ## Table of Contents
