@@ -1,0 +1,19 @@
+# Pipeline-wide settings. See ../README.md and ../docs/ for the full pipeline overview.
+
+samples_tsv: "config/samples_example.tsv"
+results_dir: "results"
+nucflag_config_dir: "config"   # nucflag_final_hifi.toml / nucflag_final_ont_r9.toml, copied in alongside this file
+
+# H37Rv reference FASTA (RefSeq ASM19595v2, contig NC_000962.3) -- used for
+# assembly<->H37Rv alignment and misassembly-coordinate liftover. Fixed path, not
+# per-sample.
+h37rv_fasta: "/n/data1/hms/dbmi/farhat/mm774/References/GCF_000195955.2_ASM19595v2_genomic.fasta"
+
+# H37Rv Paralogous-Regions table (one of the two curated region sets misassemblies are
+# annotated against). Fixed path, not per-sample.
+h37rv_paralogous_regions_tsv: "../../Data/H37Rv.NonUniqueSeqRegions.V1/H37Rv.Minimap2.HomologyMap.ParalogousRegions.tsv.gz"
+
+# O2 SLURM profile support (see profiles/o2_slurm_generic/). Ignored entirely under
+# local/default execution.
+partition: "short"
+slurm_log_dir: "logs"

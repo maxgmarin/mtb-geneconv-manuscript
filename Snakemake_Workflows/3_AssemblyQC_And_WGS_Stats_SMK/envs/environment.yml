@@ -1,0 +1,15 @@
+name: nucflag_env
+channels:
+  - bioconda
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - minimap2=2.28
+  - samtools=1.20
+  - bedtools=2.31.1
+  - mosdepth=0.3.14
+  - snakemake=9.23.1
+  - snakemake-executor-plugin-cluster-generic=1.0.9
+  - pip:
+      - nucflag==1.0.0

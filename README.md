@@ -44,7 +44,7 @@ The repository is organized into the following key directories.
 | Directory | Description |
 |---|---|
 | [`0.GenomeData/`](0.GenomeData/) | Dataset descriptions, per-sample metadata, SRA accessions, and links to genome assemblies deposited on Zenodo |
-| [`Snakemake_Workflows/`](Snakemake_Workflows/) | Snakemake pipelines for genome assembly and core whole-genome analysis (variant calling, phylogenetics, recombination detection) |
+| [`Snakemake_Workflows/`](Snakemake_Workflows/) | Snakemake pipelines for genome assembly, core whole-genome analysis (variant calling, phylogenetics, recombination detection), and assembly QC |
 | [`Analysis/`](Analysis/) | Jupyter notebooks for all downstream analyses (nucleotide diversity, gene conversion events, epitope analysis, validation) |
 | [`Data/`](Data/) | Input metadata tables and processed results files used by the analysis notebooks |
 | [`References/`](References/) | H37Rv reference genome annotations, masking files, and other reference resources |
@@ -65,12 +65,13 @@ Raw sequencing data accessions (SRA/ENA run accessions and BioProject IDs) for a
 
 ## Snakemake Workflows
 
-Two Snakemake workflows were used to process raw sequencing data and generate the inputs for downstream analysis:
+Three Snakemake workflows were used to process raw sequencing data and generate the inputs for downstream analysis:
 
 | Workflow | Description |
 |---|---|
 | [`Snakemake_Workflows/1_GenomeAssembly_SMK/`](Snakemake_Workflows/1_GenomeAssembly_SMK/) | Hybrid genome assembly from long-read + short-read WGS data (Flye + Pilon ± Medaka/PolyPolish) |
 | [`Snakemake_Workflows/2_CoreAnalysis_SMK/`](Snakemake_Workflows/2_CoreAnalysis_SMK/) | Whole-genome analysis: reference alignment, variant calling, phylogenetics, nucleotide diversity, and recombination detection (Gubbins) |
+| [`Snakemake_Workflows/3_AssemblyQC_And_WGS_Stats_SMK/`](Snakemake_Workflows/3_AssemblyQC_And_WGS_Stats_SMK/) | Assembly QC: long-read-to-own-assembly alignment, NucFlag misassembly calling, and liftover/annotation against H37Rv and curated region sets |
 
 See each workflow's `README.md` for inputs, usage, and exact run commands.
 

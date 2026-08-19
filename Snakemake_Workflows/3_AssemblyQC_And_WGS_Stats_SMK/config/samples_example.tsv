@@ -1,0 +1,2 @@
+SampleID	LR_FQ_PATH	LR_Technology	AssemblyPath	Dataset_Tag
+S0085-01	/n/data1/hms/dbmi/farhat/mm774/DownloadedData/TRUST_PBSet1_PacBio_CCS/TRUST.bc2006.ccs.fastq.gz	PacBio_HiFi	/n/data1/hms/dbmi/farhat/mm774/Projects/Mtb-GeneConv/MtbGC_GenomeAssemblies/260310.Mtb151CI.CompleteHybridAsms.RenamedAndCompressed/Marin2026.Mtb.CompleteHybridAsms.Mtb151CI/S0085-01.fasta	TRUST_PB_Set1

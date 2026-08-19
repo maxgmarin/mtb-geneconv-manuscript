@@ -1,0 +1,23 @@
+SampleID	Cohort	n_misassemblies	misassembly_type_counts	n_misassemblies_lifted_to_h37rv	n_misassemblies_not_lifted	n_misassemblies_overlapping_hotspot	n_misassemblies_overlapping_pr
+TB3256	TBP22CI	3	{'het_or_mismap': 3}	3	0	1	1
+TB3305	TBP22CI	3	{'het_or_mismap': 3}	3	0	0	0
+TB3572	TBP22CI	0	{}	0	0	0	0
+TB3706	TBP22CI	157	{'het_or_mismap': 123, 'low_quality': 26, 'deletion': 7, 'simple_repeat': 1}	154	3	2	11
+TB3898	TBP22CI	6	{'het_or_mismap': 5, 'low_quality': 1}	6	0	0	0
+TB4414	TBP22CI	0	{}	0	0	0	0
+TB6552	TBP22CI	5	{'het_or_mismap': 4, 'deletion': 1}	5	0	1	3
+TB6596	TBP22CI	3	{'het_or_mismap': 2, 'mismatch': 1}	3	0	0	1
+TB6599	TBP22CI	1	{'het_or_mismap': 1}	1	0	0	0
+TB6733	TBP22CI	0	{}	0	0	0	0
+TB6755	TBP22CI	0	{}	0	0	0	0
+TB6765	TBP22CI	1	{'het_or_mismap': 1}	1	0	0	0
+TB6778	TBP22CI	3	{'het_or_mismap': 3}	3	0	1	1
+TB6786	TBP22CI	2	{'het_or_mismap': 2}	2	0	0	0
+TB6807	TBP22CI	0	{}	0	0	0	0
+TB6846	TBP22CI	0	{}	0	0	0	0
+TB6973	TBP22CI	1	{'low_quality': 1}	1	0	0	0
+TB6976	TBP22CI	0	{}	0	0	0	0
+TB6977	TBP22CI	2	{'het_or_mismap': 1, 'mismatch': 1}	2	0	0	0
+TB7044	TBP22CI	3	{'het_or_mismap': 3}	3	0	0	0
+TB7340	TBP22CI	0	{}	0	0	0	0
+TB8073	TBP22CI	2	{'het_or_mismap': 2}	2	0	1	1

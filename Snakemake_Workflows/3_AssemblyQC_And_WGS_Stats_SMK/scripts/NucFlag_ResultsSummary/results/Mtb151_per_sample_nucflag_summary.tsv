@@ -1,0 +1,152 @@
+SampleID	Cohort	n_misassemblies	misassembly_type_counts	n_misassemblies_lifted_to_h37rv	n_misassemblies_not_lifted	n_misassemblies_overlapping_hotspot	n_misassemblies_overlapping_pr
+01_R1134	Mtb151	0	{}	0	0	0	0
+01_R1430	Mtb151	0	{}	0	0	0	0
+02_R0894	Mtb151	0	{}	0	0	0	0
+02_R1179	Mtb151	0	{}	0	0	0	0
+02_R1708	Mtb151	0	{}	0	0	0	0
+02_R1896	Mtb151	0	{}	0	0	0	0
+18_0621851	Mtb151	0	{}	0	0	0	0
+3003-06	Mtb151	0	{}	0	0	0	0
+4549-04	Mtb151	1	{'softclip': 1}	1	0	0	0
+696-05	Mtb151	0	{}	0	0	0	0
+702-06	Mtb151	1	{'softclip': 1}	1	0	0	0
+706-05	Mtb151	1	{'softclip': 1}	0	1	0	0
+8129-04	Mtb151	0	{}	0	0	0	0
+8651-04	Mtb151	2	{'softclip': 2}	1	1	0	0
+9050-05	Mtb151	0	{}	0	0	0	0
+M0003941_3	Mtb151	0	{}	0	0	0	0
+M0010874_7	Mtb151	0	{}	0	0	0	0
+M0011368_9	Mtb151	0	{}	0	0	0	0
+M0014888_3	Mtb151	0	{}	0	0	0	0
+M0016395_7	Mtb151	0	{}	0	0	0	0
+M0016737_0	Mtb151	0	{}	0	0	0	0
+M0017522_5	Mtb151	0	{}	0	0	0	0
+MT_0080	Mtb151	0	{}	0	0	0	0
+N0004	Mtb151	0	{}	0	0	0	0
+N0054	Mtb151	0	{}	0	0	0	0
+N0072	Mtb151	0	{}	0	0	0	0
+N0091	Mtb151	0	{}	0	0	0	0
+N0145	Mtb151	0	{}	0	0	0	0
+N0153	Mtb151	3	{'het_or_mismap': 2, 'softclip': 1}	1	2	0	1
+N0155	Mtb151	0	{}	0	0	0	0
+N1176	Mtb151	0	{}	0	0	0	0
+N1177	Mtb151	0	{}	0	0	0	0
+N1202	Mtb151	0	{}	0	0	0	0
+N1272	Mtb151	0	{}	0	0	0	0
+N1274	Mtb151	0	{}	0	0	0	0
+QC-1	Mtb151	0	{}	0	0	0	0
+QC-10	Mtb151	5	{'deletion': 4, 'softclip': 1}	5	0	0	0
+QC-3	Mtb151	0	{}	0	0	0	0
+QC-4	Mtb151	2	{'deletion': 2}	2	0	0	0
+QC-5	Mtb151	0	{}	0	0	0	0
+QC-6	Mtb151	4	{'deletion': 4}	4	0	0	2
+QC-7	Mtb151	60	{'deletion': 33, 'het_or_mismap': 17, 'homopolymer': 5, 'softclip': 3, 'simple_repeat': 1, 'other_repeat': 1}	50	10	1	14
+QC-8	Mtb151	1	{'deletion': 1}	1	0	0	0
+QC-9	Mtb151	1	{'softclip': 1}	1	0	0	1
+R15311	Mtb151	0	{}	0	0	0	0
+R18040	Mtb151	0	{}	0	0	0	0
+R18043	Mtb151	0	{}	0	0	0	0
+R20260	Mtb151	0	{}	0	0	0	0
+R20574	Mtb151	0	{}	0	0	0	0
+R20896	Mtb151	0	{}	0	0	0	0
+R21363	Mtb151	0	{}	0	0	0	0
+R21408	Mtb151	0	{}	0	0	0	0
+R21770	Mtb151	0	{}	0	0	0	0
+R21839	Mtb151	0	{}	0	0	0	0
+R21893	Mtb151	0	{}	0	0	0	0
+R22601	Mtb151	0	{}	0	0	0	0
+R23146	Mtb151	0	{}	0	0	0	0
+R23571	Mtb151	0	{}	0	0	0	0
+R23887	Mtb151	0	{}	0	0	0	0
+R24100	Mtb151	0	{}	0	0	0	0
+R24120	Mtb151	0	{}	0	0	0	0
+R25048	Mtb151	0	{}	0	0	0	0
+R26778	Mtb151	0	{}	0	0	0	0
+R26791	Mtb151	0	{}	0	0	0	0
+R27252	Mtb151	0	{}	0	0	0	0
+R27657	Mtb151	0	{}	0	0	0	0
+R27725	Mtb151	0	{}	0	0	0	0
+R27937	Mtb151	0	{}	0	0	0	0
+R28012	Mtb151	0	{}	0	0	0	0
+R28581	Mtb151	0	{}	0	0	0	0
+R28703	Mtb151	0	{}	0	0	0	0
+R28980	Mtb151	0	{}	0	0	0	0
+R29598	Mtb151	0	{}	0	0	0	0
+R29816	Mtb151	0	{}	0	0	0	0
+R30078	Mtb151	0	{}	0	0	0	0
+R30215	Mtb151	0	{}	0	0	0	0
+R30234	Mtb151	0	{}	0	0	0	0
+R30396	Mtb151	1	{'deletion': 1}	1	0	0	1
+R30420	Mtb151	0	{}	0	0	0	0
+R31095	Mtb151	0	{}	0	0	0	0
+R32929	Mtb151	0	{}	0	0	0	0
+R36431	Mtb151	0	{}	0	0	0	0
+R37765	Mtb151	0	{}	0	0	0	0
+RW-TB008	Mtb151	0	{}	0	0	0	0
+S0070-08	Mtb151	1	{'het_or_mismap': 1}	1	0	0	0
+S0085-01	Mtb151	2	{'low_quality': 1, 'het_or_mismap': 1}	2	0	2	2
+S0089-01	Mtb151	0	{}	0	0	0	0
+S0106-01	Mtb151	1	{'het_or_mismap': 1}	1	0	1	1
+S0107-01	Mtb151	0	{}	0	0	0	0
+S0123-01	Mtb151	0	{}	0	0	0	0
+S0256-08	Mtb151	1	{'het_or_mismap': 1}	1	0	0	0
+S0262-02	Mtb151	1	{'het_or_mismap': 1}	1	0	0	0
+TB1236	Mtb151	2	{'softclip': 2}	2	0	0	0
+TB1612	Mtb151	10	{'deletion': 4, 'softclip': 4, 'het_or_mismap': 2}	5	5	0	1
+TB2512	Mtb151	0	{}	0	0	0	0
+TB2659	Mtb151	1	{'softclip': 1}	1	0	0	0
+TB2661	Mtb151	2	{'softclip': 2}	2	0	0	0
+TB2780	Mtb151	0	{}	0	0	0	0
+TB2968	Mtb151	0	{}	0	0	0	0
+TB2981	Mtb151	0	{}	0	0	0	0
+TB2995	Mtb151	1	{'softclip': 1}	1	0	0	0
+TB3054	Mtb151	0	{}	0	0	0	0
+TB3091	Mtb151	0	{}	0	0	0	0
+TB3113	Mtb151	0	{}	0	0	0	0
+TB3162	Mtb151	1	{'softclip': 1}	1	0	0	0
+TB3169	Mtb151	0	{}	0	0	0	0
+TB3237	Mtb151	3	{'softclip': 2, 'deletion': 1}	1	2	0	1
+TB3251	Mtb151	1	{'softclip': 1}	1	0	0	0
+TB3334	Mtb151	0	{}	0	0	0	0
+TB3368	Mtb151	0	{}	0	0	0	0
+TB3386	Mtb151	3	{'softclip': 3}	2	1	0	0
+TB3396	Mtb151	3	{'softclip': 2, 'het_or_mismap': 1}	0	3	0	0
+TB4620	Mtb151	0	{}	0	0	0	0
+mada_1-1	Mtb151	0	{}	0	0	0	0
+mada_1-10	Mtb151	0	{}	0	0	0	0
+mada_1-11	Mtb151	2	{'softclip': 1, 'deletion': 1}	2	0	0	0
+mada_1-12	Mtb151	0	{}	0	0	0	0
+mada_1-15	Mtb151	0	{}	0	0	0	0
+mada_1-30	Mtb151	0	{}	0	0	0	0
+mada_1-32	Mtb151	0	{}	0	0	0	0
+mada_1-36	Mtb151	0	{}	0	0	0	0
+mada_1-38	Mtb151	1	{'softclip': 1}	1	0	0	1
+mada_1-39	Mtb151	0	{}	0	0	0	0
+mada_1-41	Mtb151	0	{}	0	0	0	0
+mada_1-44	Mtb151	0	{}	0	0	0	0
+mada_1-50	Mtb151	0	{}	0	0	0	0
+mada_1-51	Mtb151	0	{}	0	0	0	0
+mada_1-53	Mtb151	0	{}	0	0	0	0
+mada_102	Mtb151	0	{}	0	0	0	0
+mada_103	Mtb151	0	{}	0	0	0	0
+mada_105	Mtb151	0	{}	0	0	0	0
+mada_107	Mtb151	6	{'deletion': 4, 'het_or_mismap': 1, 'softclip': 1}	6	0	2	3
+mada_112	Mtb151	0	{}	0	0	0	0
+mada_115	Mtb151	0	{}	0	0	0	0
+mada_117	Mtb151	1	{'softclip': 1}	0	1	0	0
+mada_118	Mtb151	0	{}	0	0	0	0
+mada_120	Mtb151	0	{}	0	0	0	0
+mada_122	Mtb151	1	{'het_or_mismap': 1}	1	0	0	0
+mada_123	Mtb151	0	{}	0	0	0	0
+mada_124	Mtb151	3	{'het_or_mismap': 2, 'softclip': 1}	0	3	0	0
+mada_126	Mtb151	0	{}	0	0	0	0
+mada_128	Mtb151	0	{}	0	0	0	0
+mada_129	Mtb151	0	{}	0	0	0	0
+mada_139	Mtb151	0	{}	0	0	0	0
+mada_151	Mtb151	0	{}	0	0	0	0
+mada_2-1	Mtb151	0	{}	0	0	0	0
+mada_2-25	Mtb151	0	{}	0	0	0	0
+mada_2-31	Mtb151	0	{}	0	0	0	0
+mada_2-42	Mtb151	1	{'homopolymer': 1}	1	0	0	0
+mada_2-46	Mtb151	31	{'het_or_mismap': 15, 'homopolymer': 12, 'deletion': 3, 'simple_repeat': 1}	0	31	0	0
+mada_2-53	Mtb151	0	{}	0	0	0	0

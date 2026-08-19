@@ -1,0 +1,51 @@
+# O2 SLURM profile for Snakemake >=8, using the cluster-generic executor plugin
+# (snakemake-executor-plugin-cluster-generic, installed in nucflag_env).
+#
+# This is a NEW, self-contained profile -- it deliberately does not modify or reuse
+# DeepVarMtb's workflow/profiles/o2_slurm, which was written for the old Snakemake <=7
+# generic --cluster/--cluster-status/--cluster-cancel interface and is incompatible with
+# Snakemake 9 (confirmed empirically: `--cluster-cancel`/`--cluster-status` are rejected
+# as unrecognized arguments). The sbatch submit command below reproduces the same
+# pattern/flags as o2_slurm's config.yaml, just expressed via the new
+# cluster-generic-submit-cmd option.
+#
+# Every rule in align.smk/nucflag.smk already carries params.partition/slurm_log_dir and
+# resources.mem_mb/runtime_slurm (added originally for o2_slurm) -- this profile consumes
+# those same fields, so no rule files needed to change.
+
+executor: cluster-generic
+cluster-generic-submit-cmd: >-
+  mkdir -p {params.slurm_log_dir}/logs/{rule}/ &&
+  sbatch -p {params.partition}
+  --cpus-per-task={threads}
+  --mem={resources.mem_mb}
+  --time={resources.runtime_slurm}
+  --job-name=smk-{rule}
+  --parsable
+  --output={params.slurm_log_dir}/logs/{rule}/{jobid}.{wildcards}.out
+  --error={params.slurm_log_dir}/logs/{rule}/{jobid}.{wildcards}.err
+cluster-generic-status-cmd: workflow/profiles/o2_slurm_generic/status-sacct.sh
+cluster-generic-cancel-cmd: scancel
+
+# Bumped 11->50 (2026-07-14) -- user confirmed this cluster/account can handle more
+# concurrent jobs than the original conservative value.
+jobs: 50
+local-cores: 1
+# Bumped 45->60 (2026-07-10) after 3 MissingOutputException filesystem-latency races
+# (TB1236, mada_105, S0107-01) in the Mtb151 151-sample batch under 150 concurrent
+# jobs hammering the shared NFS-backed results_dir. Likely a random/transient race,
+# not specific to those samples.
+latency-wait: 60
+max-jobs-per-second: 10
+max-status-checks-per-second: 10
+printshellcmds: true
+# Standard practice going forward (user decision, 2026-07-10): don't let one failed
+# sample halt the whole batch. Independent samples/jobs keep running; only jobs that
+# actually depend on a failed job's output are skipped. Doesn't mask failures -- the
+# run still ends with a nonzero exit and reports every failure, just after finishing
+# everything that could still complete.
+keep-going: true
+
+default-resources:
+  - runtime=30
+  - mem_mb=2000
