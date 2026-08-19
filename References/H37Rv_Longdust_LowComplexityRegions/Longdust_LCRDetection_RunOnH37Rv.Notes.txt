@@ -1,0 +1,22 @@
+# Notes for running Longdust (v1.2) on H37Rv reference genome
+
+# First make directory for outputs
+mkdir /n/data1/hms/dbmi/farhat/mm774/References/H37Rv_LCR_Longdust_v1.2_Dir
+
+cd /n/data1/hms/dbmi/farhat/mm774/References/H37Rv_LCR_Longdust_v1.2_Dir
+
+
+# Define path to H37Rv reference genome FASTA
+H37Rv_FA="/n/data1/hms/dbmi/farhat/mm774/References/GCF_000195955.2_ASM19595v2_genomic.fasta"
+
+
+# Run longdust to get Low Complexity Regions in H37Rv genome
+longdust $H37Rv_FA -k6 -w1000 -t .5 > H37Rv.longdust.LCR.relaxedshorter.bed
+
+
+# Get the total length of all Low Complexity Regions detected
+bedtools merge -i H37Rv.longdust.LCR.relaxedshorter.bed | awk '{sum += $3 - $2} END {print sum}'
+
+# H37Rv LCR Size: 127160 bp 
+# total H37Rv genome size is 4411532 bp
+
